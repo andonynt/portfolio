@@ -21,7 +21,7 @@ const { title, text, appImage, technologies, links } = props;
             <div class='flex flex-col gap-2 items-center justify-self-center'>
               <img
                 class='md:h-16 h-10'
-                src={`./public/icons/${props.icon}`}
+                src={`../../public/icons/${props.icon}`}
                 alt={props.name}
               />
               <h4 class='text-white md:text-base text-sm'>{props.name}</h4>
@@ -53,7 +53,7 @@ const { title, text, appImage, technologies, links } = props;
       <img src={phoneCt} alt={title} />
       <img
         class='absolute w-[264px] h-[567px] bg-black rounded-3xl object-cover'
-        src={`./public/images/${appImage}`}
+        src={`../../public/images/${appImage}`}
         alt={title.toLowerCase()}
       />
     </div>
