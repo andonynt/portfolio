@@ -1,0 +1,18 @@
+---
+import ContainerLayout from '../layouts/ContainerLayout.astro';
+import NavigationBar from '../components/NavigationBar.astro';
+import Home from '../components/Home.astro';
+import About from '../components/About.astro';
+import Portfolio from '../components/Portfolio.astro';
+import Contact from '../components/Contact.astro';
+import Credits from '../components/Credits.astro';
+---
+
+<NavigationBar />
+<ContainerLayout title='Portfolio'>
+  <Home />
+  <About />
+  <Portfolio />
+  <Contact />
+  <Credits />
+</ContainerLayout>

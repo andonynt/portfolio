@@ -1,0 +1,51 @@
+---
+import hamburger from '../assets/icons/hamburger.png';
+---
+
+<nav
+  class='fixed top-0 bg-[#090909] w-full border-gray-700 border-b-[1px] z-10'>
+  <div
+    class='max-w-[1920px] relative h-16 px-3 lg:px-8 py-2 flex justify-between items-center mx-auto'>
+    <img src='./src/assets/images/logo.jpg' class='h-full' alt='logo' />
+    <ul
+      id='menu'
+      class='text-white absolute py-6 -bottom-[1px] w-full -translate-y-full duration-200 space-y-4 bg-black text-center lg:translate-y-0 lg:space-y-0 lg:py-0 lg:static lg:w-fit lg:flex items-center lg:space-x-16 text-lg'>
+      <li>
+        <a href='#home' class='p-2 hover:text-cyan-green duration-200'>home</a>
+      </li>
+      <li>
+        <a href='#about' class='p-2 hover:text-cyan-green duration-200'>about</a
+        >
+      </li>
+      <li>
+        <a href='#projects' class='p-2 hover:text-cyan-green duration-200'
+          >projects</a
+        >
+      </li>
+      <li>
+        <a href='#contact' class='p-2 hover:text-cyan-green duration-200'
+          >contact</a
+        >
+      </li>
+    </ul>
+    <div id='hamburger' class='cursor-pointer lg:hidden'>
+      <img class='h-8 w-8' src={hamburger} alt='' />
+    </div>
+  </div>
+</nav>
+<script>
+  const $hamburger = document.getElementById('hamburger'),
+    $menu = document.getElementById('menu'),
+    $menuItems = document.querySelectorAll('#menu > li');
+
+  if (window.innerWidth < 1024) {
+    $hamburger?.addEventListener('click', (e) => {
+      $menu?.classList.toggle('translate-y-full');
+    });
+    $menuItems?.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        $menu?.classList.toggle('translate-y-full');
+      });
+    });
+  }
+</script>

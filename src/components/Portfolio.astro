@@ -1,0 +1,17 @@
+---
+import projects from '../static/projects.js';
+import Project from './utils/Project.astro';
+---
+
+<section id='projects' class='mt-40 min-h-screen'>
+  <h2
+    class='text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-cyan-green text-center'>
+    Portfolio
+  </h2>
+  <p class='text-lg lg:text-xl xl:text-2xl text-center mt-6'>
+    A selection of my favorite projects.
+  </p>
+  <section class='space-y-32 lg:space-y-48 mt-10 projects-container'>
+    {projects.map((props) => <Project props={props} />)}
+  </section>
+</section>
