@@ -1,3 +1,7 @@
+---
+import hero from '../../public/images/hero.svg';
+---
+
 <main
   id='home'
   class='min-h-[700px] w-full flex flex-col-reverse xl:flex-row gap-10 xl:gap-0 mt-28'>
@@ -70,10 +74,6 @@
   </div>
   <!-- IMAGE -->
   <div class='hero-image flex-[2] flex justify-center items-center'>
-    <img
-      src='./src/assets/images/hero.svg'
-      class='w-full max-h-[600px]'
-      alt='hero'
-    />
+    <img src={hero} class='w-full max-h-[600px]' alt='hero' />
   </div>
 </main>

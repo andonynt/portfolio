@@ -97,7 +97,7 @@ export default [
     ],
     links: [
       {
-        url: 'https://github.com/andonynt/linkeefy-app',
+        url: 'https://github.com/andonynt/wallet-tracker',
         text: 'repo',
       },
     ]

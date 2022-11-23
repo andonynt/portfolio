@@ -1,12 +1,13 @@
 ---
-import hamburger from '../assets/icons/hamburger.png';
+import hamburger from '../../public/icons/hamburger.png';
+import logo from '../../public/images/logo.jpg';
 ---
 
 <nav
   class='fixed top-0 bg-[#090909] w-full border-gray-700 border-b-[1px] z-10'>
   <div
     class='max-w-[1920px] relative h-16 px-3 lg:px-8 py-2 flex justify-between items-center mx-auto'>
-    <img src='./src/assets/images/logo.jpg' class='h-full' alt='logo' />
+    <img src={logo} class='h-full' alt='logo' />
     <ul
       id='menu'
       class='text-white absolute py-6 -bottom-[1px] w-full -translate-y-full duration-200 space-y-4 bg-black text-center lg:translate-y-0 lg:space-y-0 lg:py-0 lg:static lg:w-fit lg:flex items-center lg:space-x-16 text-lg'>
